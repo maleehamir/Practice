@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbie Dress-Up Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8e1f4;
+            text-align: center;
+        }
+        #barbie {
+            width: 200px;
+            height: auto;
+            margin: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Barbie Dress-Up Game</h1>
+<img id="barbie" src="barbie_default.png" alt="Barbie">
+
+<div>
+    <button class="button" onclick="changeOutfit('barbie_dress1.png')">Dress 1</button>
+    <button class="button" onclick="changeOutfit('barbie_dress2.png')">Dress 2</button>
+    <button class="button" onclick="changeOutfit('barbie_dress3.png')">Dress 3</button>
+    <button class="button" onclick="changeOutfit('barbie_default.png')">Reset</button>
+</div>
+
+<script>
+    function changeOutfit(outfit) {
+        document.getElementById('barbie').src = outfit;
+    }
+</script>
+
+</body>
+</html>
